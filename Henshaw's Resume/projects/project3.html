@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #f6f8f9;
+        }
+        #header{
+            position: fixed;
+            background-color: lavenderblush;
+            width: 100%;
+            padding: 0;
+            margin-top: 0;
+            height: 30px;
+        }
+
+      ul{
+        display: flex;
+        gap: 60px;
+        justify-content: right;
+        color: #111518;
+      }
+
+      li:hover{
+        color: red;
+      }
+
+
+      ul li{
+        list-style: none;
+      }
+
+      .button{
+        background-color:lavenderblush;
+        color: brown;
+        margin-top: 200px;
+        margin-left: 10px;
+        width: 170px;
+        height: 30px;
+        border-radius: 15px;
+        border-color: transparent;
+        box-shadow:20px 10px 15px;
+      }
+
+      #words{
+        border-radius: 5px;
+        background-color: lavenderblush;
+        height: 200px;
+        width: auto;
+      }
+
+      .contact{
+        margin-top: 10px;
+        color: lavenderblush;
+        background-color: brown;
+        width: 120px;
+        height: 30px;
+        border-radius: 15px;
+        border-color: transparent;
+      }
+
+     #words img{
+        width: 200px;
+        height: 200px;
+        float: right;
+        border-radius: 30px;
+      }
+
+      #order {
+        text-align: center;
+        margin: 80px;
+        
+      }
+
+      #order img {
+        width: 150px;
+        height:200px;
+        margin: auto;
+        padding: 70px;
+      }
+
+      #chefs{
+        text-align: center;
+      }
+
+      #chefs img{
+        margin: auto;
+        padding: 70px;
+        width: 300px;
+        height: 300px;
+      }
+
+      #us{
+        text-align: center;
+      }
+
+      input{
+        margin: 10px;
+        width: 290px;
+        border-radius: 6px;
+        border-color: transparent;
+        background-color: lavenderblush;
+      }
+
+      #message{
+        height: 200px;
+      }
+
+      #send{
+        width: 290px;
+        color: white;
+        background-color: brown;
+        border-radius: 4px ;
+        border-color: transparent;
+      }
+
+      #us h5{
+        color: brown;
+      }
+
+      span{
+        color: brown;
+      }
+
+      #order h5{
+        color: brown;
+      }
+
+      #chefs h5{
+        color: brown;
+      }
+
+      #button{
+        background-color: lavenderblush;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+       <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Our Chefs</li>
+        <li>Contacts</li>
+       </ul>
+    </div>
+
+    <div id="button">
+    <button class="button">More Then Faster</button>
+    </div>
+
+    <div id="words">
+        <img src="chef.jpeg">
+        <h2>Be The Fastest<br>In Delivering<br>Your <span>Food</span></h2>
+        <p>Nam libero tempore, cum soluta nobis est eligendi <br>
+        optio cumque nihil impedit.</p>
+        <button class="contact">Contact Here</button>
+    </div>
+
+    <div id="order">
+        <div class="order">
+        <h5>What we serve</h5>
+        <h2>Your Favourite Fodd<br>Delivery Partner</h2>
+        </div>
+        <img src="order.jpeg">
+        <p>Easy to Order</p>
+        <p>am libero tempore, cum soluta nobis est eligendi.</p>
+        <img src="fast.png">
+        <img src="best.jpeg">
+    </div>
+
+    <div id="chefs">
+        <h5>OUR CHEF'S</h5>
+        <h2>Our Awesome Chef's</h2>
+        <img src="chef1.jpeg">
+        <img src="chef2.jpeg">
+        <img src="chef3.jpeg">
+    </div>
+
+    <div id="us">
+        <h5>HAVE ANY QUESTIONS</h5>
+        <h2>Contact Us</h2>
+        <input type="text" id="name" placeholder="Your Name"><br>
+        <input type="email" id="email" placeholder="Enter Your Email"><br>
+        <input type="text" id="message" placeholder="Write Your Message"><br>
+        <button id="send">Send</button>
+    </div>
+
+
+</body>
+</html>

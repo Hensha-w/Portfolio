@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <style>
+        body{
+            background-image: url(hiking.jpeg);
+            background-position: center;
+            background-size: cover;
+            height: 95vh;
+            display: flex;
+            backdrop-filter: blur(3px);
+            margin-top: 25px;
+            font-family: cursive;
+        }
+
+        .top-bar{
+            margin-left: 92px;
+            width: 1100px;
+            height: 80px;
+            background: radial-gradient(rgba(255,255,255,0.6));
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            backdrop-filter: blur(3px);
+        }
+
+        nav{
+            display: flex;
+            padding: 12px 5px;
+        }
+
+        .logo{
+            margin-top: 5px;
+            color: #fff;
+            font-size: 35px;
+            float: left;
+            cursor: pointer;
+        }
+
+        nav ul{
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #000;
+            transition: .2s ease;
+        }
+
+        nav ul li a:hover{
+            color: #fff;
+       }
+       
+       .bars{
+        list-style: none;
+        margin: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+        margin-left: 60px;
+       }
+
+       .main{
+        display: flex;
+        margin: 20px;
+       }
+
+       .content{
+        background-image: url(hiking.jpeg);
+        background-position: center;
+        background-size: cover;
+        width: 930px;
+        height: 500px;
+        background: radial-gradient(rgba(255,255,255,0.6));
+        box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        padding-left: 52px;
+        margin-left: 72px;
+        border-radius: 20px;
+
+       }
+
+       h2{
+        font-size: 35px;
+        padding-top: 20px;
+       }
+
+       h4{
+        font-size: 20px;
+       }
+
+       p{
+        padding-bottom: 30px;
+        color: white;
+       }
+
+       button{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 6px 16px;
+        font-size: 18px;
+        color: #000;
+        background-color: #fff;
+        font-family: cursive;
+        border-radius: 5px;
+        border:0;
+        outline: 0;
+        transition: .2s ease;
+       }
+
+       button:hover{
+        background-color: orange;
+       }
+
+       .icons{
+        margin-left: 35px;
+        width: 80px;
+        height: 500px;
+        background: radial-gradient(rgba(255,255,255,0.6));
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        backdrop-filter: blur(3px);
+       }
+
+       .social-icons ul li {
+        list-style: none;
+        margin: 55px;
+        margin-left: -16px;
+       }
+
+       .social-icons ul li i{
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        padding: 8px 8px;
+        transition: .2s ease;
+        border-radius: 8px;
+       }
+
+       .social-icons ul li i:hover{
+        background-color: #fff;
+        color: #000;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div class="top-bar">
+            <nav>
+                <h1 class="logo">H<i class="fas fa-hiking"></i>KE</h1>
+
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <li class="bars"><i class="fas fa-bars"></i></li>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="content">
+                <h2>HIKING AND HAPPINESS GOES <br>HAND IN HAND OR FOOT IN BOOT</h2>
+                <h4>YOU CAN VISIT THE SAME TRIAL <br>TWICE BUT YOU'LL NEVER <br>TAKE THE SAME HIKE</h4>
+                <p>---<i class="fas fa-hiking"></i><i class="fas fa-hiking"></i><i class="fas fa-hiking"></i>----100+ HIKING COMPLETED---<i class="fas fa-hiking"></i><i class="fas fa-hiking"></i><i class="fas fa-hiking"></i>---</p>
+                <button type="button">BOOK NOW <i class="fas fa-ticket-alt"></i></button>
+            </div>
+
+            <div class="icons">
+                <div class="social-icons">
+                    <ul>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-whatsapp"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-skype"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

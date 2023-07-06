@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="normalize.css" rel="stylesheet">
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-image: linear-gradient(to top, #5f72bd 0%, #eaab2331 100%);
+            font-family: "Work Sans", sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        h1, h2, h3 {
+            font-family: "Days One", sans-serif;
+        }
+        nav{
+
+            display:flex;
+            background-color:#200e3d ;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul{
+            display: flex;
+            align-items: center;
+            padding:0 10% ;
+            list-style: none;
+        }
+
+        nav ul li a {
+            font-size:16px ;
+            padding: 0 15px;
+            color: white;
+            transition: 0.2s;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover{
+            transition: 0.2s;
+            color: #52c5ff;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .here{
+            padding-top: 130px;
+        }
+
+        .here img {
+            border-style: none;
+            border-radius: 50%;
+            margin: 0 auto;
+            max-width: 440px;
+            display: block;
+        }
+
+        h1{
+            color: black;
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 4px 100px;
+        }
+
+        .absolute{
+            width: 90%;
+            max-width: 1100px;
+            height: auto;
+            background-color: white;
+            text-align: center;
+            padding: 40px 50px 70px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 8px rgb(0 0 0 /40%),-10px  -10px 8pc rgb(255 114 114 /80% );
+        }
+
+        .absolute-section{
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        .absolute-image{
+            height: 450px;
+            width: 400px;
+            background-image: url("laptop.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .absolute-text{
+            height: auto;
+            width: 40%;
+            margin-left: 40px;
+            text-align: left;
+        }
+
+        #projects {
+           padding: 5px;
+           margin: 5%;
+           width: 90%;
+           height: auto;
+            text-align: center;
+        }
+
+        .projects{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        #projects h2{
+            color: white;
+        }
+
+        .registration {
+            width: 400px;
+            height: 400px;
+            background: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("circle.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .food{
+            width: 400px;
+            height: 400px;
+            background: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("coffee.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text{
+            position: absolute;
+            height: 50px;
+            width: 360px;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition: 0.2s;
+            padding: 20px;
+        }
+
+        .text:hover{
+            height: 175px;
+            transition: 0.3s;
+        }
+
+        .content{
+            color: black;
+        }
+
+        .button{
+            border: 5px solid lightblue;
+            border-radius: 10px;
+            width: 160px;
+            margin-bottom: 100px;
+            margin-left: 10px;
+        }
+
+        .contact{
+            width: 100%;
+            height: auto;
+            padding: 75px 0 50px 0;
+            text-align: center;
+            background-color: rgb(3 3 3/45%);
+        }
+        .contact p {
+            margin-bottom: 50px;
+        }
+
+        .contact h2, .contactp {
+            color: white;
+        }
+
+        .contact-form{
+            max-width: 800px;
+            display: flex;
+            text-align: left;
+            max-width: 1100px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .contact-form label{
+            display: block;
+            margin-bottom: 9px;
+        }
+
+        .message{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+
+        .message textarea{
+            border-radius: 5px;
+            border: 8px;
+        }
+
+        .contact-details{
+            flex: 1;
+            margin-right: 50px;
+        }
+
+        .contact-details input {
+            width: 100%;
+            border-radius: 5px;
+            border: 0px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+
+        .message button{
+            color: #1d3d5f;
+            border: 0;
+            border-radius: 5px;
+            background: lightblue;
+            width: 140px;
+            height: 40px;
+            margin-top: 40px;
+            margin-left: auto;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .message button:hover{
+            background: black;
+            color: white;
+            transition: 0.2s;
+        }
+
+        footer{
+            height: 50px;
+            background-color: #1f2027;
+        }
+
+        footer .container{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .social-media{
+            font-size: 200%;
+            width: auto;
+            margin-left: auto;
+        }
+
+        .social-media:hover{
+            color: lightblue;
+            transition: 0.2s;
+        }
+
+        .copyright{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section class="here">
+        <div class="container">
+            <img src="laptop.jpeg">
+            <h1>Hi i'm Henshaw! I'm a Frontend Developer</h1>
+
+        </div>
+    </section>
+
+    <section id="absolute" class="absolute">
+
+        <h2>About Me</h2>
+        <div class="absolute-section">
+            <div class="img">
+                <div class="absolute-image"></div>
+            </div>
+            <divc class="absolute-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, ligula vitae ultricies elementum, nunc purus iaculis dolor,
+                     et dignissim purus velit eget orci. Proin convallis vitae metus vel volutpat. Suspendisse varius blandit risus eu tincidunt. Curabitur ligula erat, 
+                     finibus vitae enim sed, faucibus dictum est. Phasellus commodo interdum nisl. Maecenas mollis velit libero, id dignissim
+                     nibh convallis vitae. Vivamus vestibulum feugiat lorem eu imperdiet.
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="project">
+            <h1>Projects</h1>
+            <div class="projects">
+
+                <div class="registration">
+                    <div class="text">
+                        <h3 class="project-name">Circle</h3>
+                        <div class="content">
+                            <p>A HTML project that contains a form for a camp</p>
+                        </div>
+
+                        <a class="button" href="project1.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="food">
+                    <div class="text">
+                        <h3 class="project-name">Coffee Menu</h3>
+                        <div class="content">
+                            <p>A HTML project that contains a food opions</p>
+                        </div>
+
+                        <a class="button" href="CSS06.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactme" class="contact">
+        <h2>Contact</h2>
+        <p>Use this form to get in touch. I would love to hear from you</p>
+        <form class="contact-form">
+            <div class="contact-details">
+            <label for="name"> Name</label>
+            <input type="text" id="name" placeholder="Yourname">
+            <label for="subject">  Subject</label>
+            <input type="text" id="subject" placeholder="Reason for your message">
+            <label for="email"> EmailAdress</label>
+            <input type="email" id="email" placeholder="Your email address">
+        </div>
+        <div class="message">
+            <label for="msg"> Message</label>
+            <textarea id="msg" rows="15"></textarea> 
+            <button type="submit">submit</button>
+        </div>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="container"> 
+            
+        </div>
+    </footer>
+</body>
+</html>
