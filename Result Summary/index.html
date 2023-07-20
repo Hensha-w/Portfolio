@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Summary Component</title>
+    <style>
+      
+
+        #score{
+            margin: 200px 200px;
+            background-color: whitesmoke;
+            box-shadow: 5px 5px 5px 5px grey;
+            width: 750px;
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        #score .summary {
+          float: right;
+          padding: 0;
+          margin: -480px 100px;
+        }
+
+        .container{
+            background-color: #603FFC;
+            width: 300px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .scores{
+            border-radius: 200px;
+            padding: 10px;
+            height: 100px;
+            width: 100px;
+            margin-left: 90px;
+            margin-top: 20px;
+            background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        }
+
+        .line{
+            color: hsl(241, 100%, 89%);
+        }
+
+        .score{
+            font-size: 25px;
+        }
+
+        .result{
+            padding: 50px;
+        }
+
+        .red{
+            background-color: #FFF7F6;
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .green{
+            background-color: #F5FBFB;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .purple{
+            background-color: #F5FBFB;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .yellow{
+            background-color: #FDFDF0;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .red .color{
+            color: red;
+        }
+        .green .color{
+            color:green;
+        }
+        .yellow .color{
+            color: yellow;
+        }
+        .purple .color{
+            color: purple;
+        }
+
+        button{
+            background-color:#303B5A;
+            width: 300px;
+            height: 50px;
+            border-radius: 20px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .grade{
+            color: grey;
+        }
+
+        .shift{
+            float: right;
+            margin: -30px 30px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="score">
+       <div class="container">
+        <p class="result">Your Result</p>
+        <div class="scores">
+        <p class="score">76</p>
+        <p class="line"> of 100</p>
+        </div>
+        <h2>Great</h2>
+        <p class="line">You scored higher than 65% of,<br>
+        the people who have taken<br>
+        these tests.</p>
+       </div>
+        <div class="summary">
+            <h3>Summary</h3>
+            <div class="red">
+                <p class="color">Reaction</p>
+                <p class="shift"><span>80</span> / <span class="grade">100</span></p>
+            </div>
+            <div class="yellow">
+                <p class="color">Memory</p>
+                <p class="shift"><span>92</span> / <span class="grade">100</span></p>
+            </div>
+            <div class="green">
+                <p class="color">Verbal</p>
+                <p class="shift"><span>61</span> / <span class="grade">100</span></p>
+            </div>
+            <div class="purple">
+                <p class="color">Visual</p>
+                <p class="shift"><span>72</span> / <span class="grade">100</span></p>
+            </div>
+            <button>Continue</button>
+        </div>
+       
+    </div>
+</body>
+</html>
