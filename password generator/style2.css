@@ -1,0 +1,50 @@
+#container{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    max-width: 100%;
+    margin: 250px;
+    align-items: center;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+h3{
+    text-align: center;
+    color: gray;
+}
+
+.password{
+   margin-left: 30px;
+   width: 250px;
+   height: 60px;
+   background-color: ghostwhite;
+   margin-bottom: 20px; 
+   outline: none;
+   resize: none;
+}
+
+.password i{
+    margin-left: 167px;
+    width: 500px;
+    height: 20px;
+    background-color: white;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    margin-left:30px ;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    border-style: none;
+    margin-left: 30px;
+    margin-top: 20px;
+}
