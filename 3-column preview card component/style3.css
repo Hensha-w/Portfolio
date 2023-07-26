@@ -1,0 +1,63 @@
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+.sedan{
+    width: 250px;
+    height: 400px;
+    background-color: #E38525;
+}
+
+.suv{
+    width: 250px;
+    height: 400px;
+    background-color: #006971;
+}
+
+.luxury{
+    width: 250px;
+    height: 400px;
+    background-color: #003F3E;
+}
+
+svg{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+p{
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+h2{
+    color: white;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-style: none;
+}
+
+.luxury button{
+    margin-top: 55px;
+    color: #003F3E;
+}
+
+.sedan button{
+    margin-top: 43px;
+    color:#E38525;
+}
+
+.suv button{
+    color: #006971;
+}
