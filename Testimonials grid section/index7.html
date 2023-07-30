@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #EDF3F7;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: row;
+            margin-top: 80px;
+            gap: 30px;
+        }
+
+        .purple{
+            background-color:#733FC7 ;
+            width: 750px;
+            height: 320px;
+            margin-left: 150px;
+            padding: 5px 25px;
+            border-radius: 20px;
+        }
+        img{
+            border-radius: 50px;
+        }
+
+        .name{
+            margin-left: 90px;
+            display: flex;
+            flex-direction: column;
+            margin-top: -50px;
+            color: white;
+        }
+
+        svg{
+            margin-left: 600px;
+            margin-top: -58px;
+        }
+
+        .header{
+           margin-top: -30px;
+           font-size: 25px;
+           color: white;
+        }
+
+        .message{
+            margin-top: 20px;
+            color: #CDD0CF;
+        }
+
+        span{
+            color: #CDD0CF;
+        }
+
+        .grey{
+            background-color: #48556A;
+            width: 390px;
+            height: 310px;
+            padding: 10px 25px;
+            border-radius: 20px;
+        }
+
+        .grey .header{
+            margin-top: 30px;
+        }
+
+        .white{
+            background-color: white;
+            width: 360px;
+            height: 650px;
+            padding: 10px 25px;
+            border-radius: 20px;
+
+        }
+
+        .white .name{
+            color: #B4B8BB;
+        }
+
+        .white .header{
+            color: #B4B8BB;
+            margin-top: 20px;
+        }
+
+        #second-container{
+            display: flex;
+            flex-direction: row;
+            margin-top: -320px;
+            gap: 30px;
+            margin-left: 150px;
+        }
+
+        .second-white{
+            background-color: white;
+            padding: 10px 25px;
+            width: 350px;
+            height: 300px;
+            border-radius: 20px;
+        }
+
+        .second-white .name{
+            color: #B4B8BB;
+        }
+
+        .second-white .header{
+            color: #B4B8BB;
+            margin-top: 40px;
+        }
+
+        .blue{
+            background-color: #19202D;
+            height: 300px;
+            width: 750px;
+            border-radius: 20px;
+            padding: 10px 45px;
+        }
+
+        .blue .header{
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width:600px) {
+            #container{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+            }
+
+            #second-container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+
+            .purple{
+            background-color:#733FC7 ;
+            width: 300px;
+            height: 660px;
+            margin-left: 10px;
+            padding: 5px 25px;
+            border-radius: 20px;
+        }
+
+        .grey{
+            background-color: #48556A;
+            width: 300px;
+            height: 350px;
+            padding: 10px 25px;
+            border-radius: 20px;
+        }
+
+        .white{
+            background-color: white;
+            width: 300px;
+            height: 650px;
+            padding: 10px 25px;
+            border-radius: 20px;
+        }
+
+        .second-white{
+            background-color: white;
+            padding: 10px 25px;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+        }
+
+        .blue{
+            background-color: #19202D;
+            height: 650px;
+            width: 260px;
+            border-radius: 20px;
+            padding: 10px 45px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="purple">
+            <img src="image-daniel.jpg">
+            <p class="name">Daniel Clifford <span>Verified Graduate</span></p>
+            <svg width="104" height="102" xmlns="http://www.w3.org/2000/svg"><path d="M104 102V59.727H84.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42-9.287 6.125-13.61C95.01 25.86 98.909 22.257 104 19.375V0c-9.758 4.27-17.712 9.874-23.864 16.813-6.151 6.939-10.712 14.545-13.681 22.818C63.485 47.904 62 59.941 62 75.74V102h42zm-62 0V59.727H22.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42-9.287 6.125-13.61C33.01 25.86 36.909 22.257 42 19.375V0c-9.652 4.27-17.58 9.874-23.784 16.813C12.01 23.752 7.424 31.358 4.455 39.631 1.485 47.904 0 59.941 0 75.74V102h42z" fill="#A775F1" fill-rule="nonzero"/></svg>
+            <p class="header">I recieved a job offer mid-course, and the subjects I learned<br>
+            were current, if not more so, in the company i joined. I<br>
+            honestly feel i got every penny's worth.</p>
+            <p class="message">“I was an EMT for many years before i joined the bootcamp. I’ve been looking to make a<br>
+                 transition and have heard some people who had an amazing experience here. I signed up for <br>
+                 the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 <br>
+                 weeks was the best - and most grueling - time of my life. Since completing the course,<br> 
+                 I’ve successfully switched careers, working as a Software Engineer at a VR startup.”</p>
+        </div>
+
+        <div class="grey">
+            <img src="image-jonathan.jpg">
+            <p class="name">Jonathan Walters <span>Verified Graduate</span></p>
+            <p class="header">The team was very<br> 
+                supportive and kept me<br> motivated</p>
+            <p class="message">“I started a total newbie with virtually no coding <br>
+                skills.I now work as a mobile engineer for a big <br>
+                company. This was one of the best investments<br>
+                 I’ve made in myself.”</p>
+        </div>
+
+        <div class="white">
+            <img src="image-kira.jpg">
+            <p class="name">Kira Whittle<span>Verified Graduate</span></p>
+            <p class="header">Such as life changing<br>
+            experience. Highly<br>
+            recommended</p>
+            <p class="message"> 
+                “Before joining the bootcamp, I’v 
+                never written a line of code. I needed 
+                some structure from professionals
+                who can help me learn programming 
+                step by step. I was encouraged 
+                to enroll by a former student of 
+                theirs who can only say wonderful things 
+                about the program. The entire curriculum 
+                and stuff did not disappoint.They were 
+                very hands-on and I never had to 
+                wait long for assistance.The agile
+                 team projects, in particular, 
+                 was outstanding. It took my learning
+                 to the next level in a way that no 
+                 tutorial could ever have. In fact, 
+                 I’ve often referred to it during 
+                 interviews as an example of my 
+                 development experience. It certainly 
+                 helped me land a job as a full stack 
+                 developer after receiving multiple 
+                 offers. 100% recommend!”
+            </p>
+        </div>
+    </div>
+
+    <div id="second-container">
+        <div class="second-white">
+            <img src="image-jeanette.jpg">
+            <p class="name">Jeanette Harmon<span>Verified Graduate</span></p>
+            <p class="header">An overall wonderful and<br>
+            rewarding experience</p>
+            <p class="message">
+                “Thank you for the wonderful experience! I now 
+                have a job I really enjoy, and make a good living 
+                while doing something I love.” 
+            </p>
+        </div>
+
+        <div class="blue">
+            <img src="image-patrick.jpg">
+            <p class="name">Patrick Abrams<span>Verified Graduate</span></p>
+            <p class="header">Awesome teaching support from TAs who did the bootcamp<br>
+                 themselves. Getting guidance from them and learning from <br>
+                 their experiences was easy.</p>
+            <p class="message">“The staff seem genuinely concerned about my progress which i find really refreshing.The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get personal attention you need from an incredible community of smart and amazing people.”</p>
+        </div>
+    </div>
+</body>
+</html>
