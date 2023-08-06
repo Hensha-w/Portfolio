@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    text-align: center;
+    background-image: url(bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header svg{
+    margin-top: 180px;
+    margin-bottom: 40px;
+}
+
+.header h2{
+    margin-bottom: 20px;
+    color: #A4A6A8;
+}
+
+.header p{
+    margin-bottom: 20px;
+    color: #E8E8E8;
+}
+
+.header #first{
+    background-color: #2BBBA2;
+    height: 40px;
+    border: none;
+    width: 160px;
+    border-radius: 30px;
+}
+
+.header #second{
+    background-color: #7B8DF6;
+    height: 40px;
+    border: none;
+    width: 160px;
+    border-radius: 30px;
+}
+
+.sectiona{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sectiona h2{
+    color: #A4A6A8;
+    margin-bottom: 20px;
+}
+
+.sectiona p{
+    color: #E8E8E8;
+    margin-bottom: 90px;
+}
+
+.sectionb img{
+    width: 500px;
+    height: 400px;
+}
+
+.sectionb{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionb .words h2{
+    color: #A4A6A8;
+    margin-bottom: 10px;
+}
+
+.sectionb .words p{
+    color: #E8E8E8;
+    margin-bottom: 30px;
+}
+
+.sectionc{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sectionc h2{
+    margin-bottom: 20px;
+    color: #A4A6A8;
+}
+
+.sectionc p{
+    color: #E8E8E8;
+    margin-bottom: 80px;
+}
+
+.sectiond {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sectiond h2{
+    margin-bottom: 20px;
+    color: #A4A6A8;
+}
+
+.sectiond p{
+    color: #E8E8E8;
+    margin-bottom: 50px;
+}
+
+.sectiond .work{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.sectiond h3{
+    color: #A4A6A8;
+    margin-bottom: 20px;
+}
+
+.images{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.images img{
+    margin-left: 100px;
+}
+
+.sectione{
+    margin-top: 90px;
+    text-align: center;
+}
+
+.sectione h2{
+    margin-bottom: 20px;
+    color: #A4A6A8;
+}
+
+.sectione p{
+    margin-bottom: 20px;
+    color: #E8E8E8;
+}
+
+.sectione #first{
+    background-color: #2BBBA2;
+    height: 40px;
+    border: none;
+    width: 160px;
+    border-radius: 30px;
+}
+
+.sectione #second{
+    background-color: #7B8DF6;
+    height: 40px;
+    border: none;
+    width: 160px;
+    border-radius: 30px;
+}
+
+.footer{
+    background-color: #F3F7F8;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .second{
+  margin-top: 40px;
+}
+
+.footer .third{
+  margin-top: 40px;
+}
+
+.footer .fourth{
+  margin-top: 40px;
+}
+
